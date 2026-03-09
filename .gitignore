@@ -4,5 +4,4 @@ env/
 __pycache__/
 *.pyc
 *.sqlite3
-alembic/
 alembic.ini
