@@ -1,8 +1,13 @@
 import uuid
+import os
+import sys
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
-from database import Base
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from src.database import Base
 
 
 class Usuario(Base):

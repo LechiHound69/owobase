@@ -1,5 +1,10 @@
-from database import SessionLocal, engine, Base
-from models import Usuario, Nota
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from src.database import SessionLocal, engine, Base
+from src.models import Usuario, Nota
 
 print("Creando tablas en Neon uwu")
 # Base.metadata.create_all(bind=engine)
